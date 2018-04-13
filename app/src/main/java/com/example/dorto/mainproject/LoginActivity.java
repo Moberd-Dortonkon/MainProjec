@@ -23,14 +23,5 @@ public class LoginActivity extends AppCompatActivity {
         //create login check
 
 
-        SharedPreferences sharedPreferences = getSharedPreferences("account", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("login",login.getText().toString());
-        editor.putString("password",pass.getText().toString());
-        editor.apply();
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
-        finish();
-
     }
 }
